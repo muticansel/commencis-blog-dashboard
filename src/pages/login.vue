@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
 import commencisLogo from "../assets/images/commencis-logo-purple.png";
+import BaseButton from "../components/BaseComponents/BaseButton.vue";
 const loginForm = reactive({ name: "", password: "" });
 const x = ref("");
 const emailinput = ref(null);
@@ -13,6 +14,9 @@ onMounted(() => {
 const submitForm = (event: Event) => {
   console.log(event);
   console.log({ ...loginForm });
+};
+const handleBaseClick = (a) => {
+  console.log(a);
 };
 </script>
 
@@ -45,6 +49,7 @@ const submitForm = (event: Event) => {
           Sign in
         </button>
       </div>
+      <BaseButton text="Hello" @click="handleBaseClick"></BaseButton>
     </div>
     <div class="w-3/6 bg-right"></div>
   </div>
