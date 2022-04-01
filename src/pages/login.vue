@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
-import commencisLogo from "../assets/images/commencis-logo-purple.png";
-import BaseButton from "../components/BaseComponents/BaseButton.vue";
+import _commencisLogo from "../assets/images/commencis-logo-purple.png";
+import _BaseButton from "../components/BaseComponents/BaseButton.vue";
 const loginForm = reactive({ name: "", password: "" });
 const x = ref("");
 const emailinput = ref(null);
@@ -24,7 +24,7 @@ const handleBaseClick = (a) => {
   <div class="wrapper">
     <div class="w-3/6 bg-blue-100 flex justify-center items-center">
       <div class="w-[358px] flex justify-center items-center flex-col bg-white">
-        <img :src="commencisLogo" class="w-[180px]" alt="" />
+        <img :src="_commencisLogo" class="w-[180px]" alt="" />
         <h1 class="title-30">Join Our Community</h1>
         <h2>Start Journey With us</h2>
         <div class="text-left">
