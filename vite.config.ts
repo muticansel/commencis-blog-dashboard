@@ -7,6 +7,7 @@ import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import WindiCSS from "vite-plugin-windicss";
 import Layouts from "vite-plugin-vue-layouts";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -35,6 +36,10 @@ export default defineConfig({
       },
     }),
   ],
+  optimizeDeps: {
+    include: ["vue", "vue-router", "@vueuse/core"],
+    exclude: ["vue-demi"],
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
