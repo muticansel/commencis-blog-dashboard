@@ -5,7 +5,12 @@
 declare module 'vue' {
   export interface GlobalComponents {
     BaseButton: typeof import('./components/BaseComponents/BaseButton.vue')['default']
+    BaseDropdown: typeof import('./components/BaseComponents/BaseDropdown.vue')['default']
     BaseInput: typeof import('./components/BaseComponents/BaseInput.vue')['default']
+    BlogList: typeof import('./components/BlogList/BlogList.vue')['default']
+    BlogListHeader: typeof import('./components/BlogList/BlogListHeader.vue')['default']
+    BlogTag: typeof import('./components/BlogList/BlogTag.vue')['default']
+    EditIconThreeDots: typeof import('./components/icons/EditIconThreeDots.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./components/icons/IconDocumentation.vue')['default']
@@ -13,6 +18,7 @@ declare module 'vue' {
     IconSupport: typeof import('./components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./components/icons/IconTooling.vue')['default']
     LoginForm: typeof import('./components/LoginForm.vue')['default']
+    SvgIcon: typeof import('./components/BaseComponents/SvgIcon.vue')['default']
   }
 }
 
