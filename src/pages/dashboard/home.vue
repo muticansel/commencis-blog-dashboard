@@ -7,15 +7,15 @@ const [sidebarVisible, sidebarToggle] = useToggle(false);
 <template>
   <div class="flex w-full h-full">
     <div
-      class="bg-red-300 w-2/7 sidebar"
-      :class="{ 'w-1/7': !sidebarVisible }"
+      class="w-1/3 sidebar"
+      :class="{ 'w-1/6': !sidebarVisible }"
       id="sidebar"
     >
       <div
         class="w-full pl-[24px] pr-[24px] pt-[40px] pb-[50px]"
         id="user-info"
       >
-        USER
+        <UserInfo :isSidebarOpen="sidebarVisible" />
       </div>
       <div class="flex flex-col h-lg justify-between">
         <div id="sidebar-menu">MENU</div>

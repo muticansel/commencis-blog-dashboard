@@ -7,12 +7,8 @@ declare module 'vue' {
     BaseButton: typeof import('./components/BaseComponents/BaseButton.vue')['default']
     BaseInput: typeof import('./components/BaseComponents/BaseInput.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    IconCommunity: typeof import('./components/icons/IconCommunity.vue')['default']
-    IconDocumentation: typeof import('./components/icons/IconDocumentation.vue')['default']
-    IconEcosystem: typeof import('./components/icons/IconEcosystem.vue')['default']
-    IconSupport: typeof import('./components/icons/IconSupport.vue')['default']
-    IconTooling: typeof import('./components/icons/IconTooling.vue')['default']
     LoginForm: typeof import('./components/LoginForm.vue')['default']
+    UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']
   }
 }
 
