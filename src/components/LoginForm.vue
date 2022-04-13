@@ -19,7 +19,7 @@ const handleBaseClick = (a) => {
 </script>
 
 <template>
-    <div class="wrapper">
+  <div class="wrapper">
     <div class="w-3/6 bg-blue-100 flex justify-center items-center">
       <div class="w-[358px] flex justify-center items-center flex-col bg-white">
         <img :src="_commencisLogo" class="w-[180px]" alt="" />
@@ -40,7 +40,11 @@ const handleBaseClick = (a) => {
             class="p-1 mt-2"
           />
         </div>
-        <BaseButton text="Sign In" buttonClass="mt-4"  @click="handleBaseClick"></BaseButton>
+        <BaseButton
+          text="Sign In"
+          buttonClass="mt-4"
+          @click="handleBaseClick"
+        ></BaseButton>
       </div>
     </div>
     <div class="w-3/6 bg-right"></div>

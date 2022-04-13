@@ -2,6 +2,18 @@
 import { useToggle } from "@vueuse/core";
 
 const [sidebarVisible, sidebarToggle] = useToggle(false);
+const menuItems = [
+  {
+    id: "dashboard",
+    iconName: "D",
+    menuItem: "Dashboard",
+  },
+  {
+    id: "myArticles",
+    iconName: "A",
+    menuItem: "My Articles",
+  },
+];
 </script>
 
 <template>
@@ -18,7 +30,7 @@ const [sidebarVisible, sidebarToggle] = useToggle(false);
         <UserInfo :isSidebarOpen="sidebarVisible" />
       </div>
       <div class="flex flex-col h-lg justify-between">
-        <div id="sidebar-menu">MENU</div>
+        <Menu :items="menuItems" :isSidebarOpen="sidebarVisible" />
         <div id="sidebar-logout">LOGOUT</div>
       </div>
     </div>
