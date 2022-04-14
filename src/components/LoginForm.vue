@@ -21,36 +21,25 @@ const handleBaseClick = (a) => {
 </script>
 
 <template>
-  <div class="wrapper">
-    <div class="w-3/6 bg-blue-100 flex justify-center items-center">
-      <div class="w-[358px] flex justify-center items-center flex-col bg-white">
-        <img :src="_commencisLogo" class="w-[180px]" alt="" />
-        <h1 class="title-30">Join Our Community</h1>
-        <h2>Start Journey With us</h2>
-        <div class="text-left">
-          <label class="block" for="">Email</label>
-          <input
-            type="text"
-            ref="emailinput"
-            v-model="loginForm.name"
-            class="p-1 mt-2"
-          />
-          <label class="block mt-5" for="">{{ t("login.password") }}</label>
-          <input
-            type="password"
-            v-model="loginForm.password"
-            class="p-1 mt-2"
-          />
-        </div>
-        <BaseButton
-          text="Sign In"
-          buttonClass="mt-4"
-          @click="handleBaseClick"
-        ></BaseButton>
-      </div>
-    </div>
-    <div class="w-3/6 bg-right"></div>
+  <img :src="_commencisLogo" class="w-[180px]" alt="" />
+  <h1 class="title-30">Join Our Community</h1>
+  <h2>Start Journey With us</h2>
+  <div class="text-left">
+    <label class="block" for="">Email</label>
+    <input
+      type="text"
+      ref="emailinput"
+      v-model="loginForm.name"
+      class="p-1 mt-2"
+    />
+    <label class="block mt-5" for="">Password</label>
+    <input type="password" v-model="loginForm.password" class="p-1 mt-2" />
   </div>
+  <BaseButton
+    text="Sign In"
+    buttonClass="mt-4"
+    @click="handleBaseClick"
+  ></BaseButton>
 </template>
 
 <style lang="scss" scoped>

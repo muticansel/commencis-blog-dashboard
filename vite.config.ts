@@ -15,10 +15,11 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-    Layouts(),
     Pages({
       extensions: ["vue", "md"],
     }),
+    Layouts(),
+
     WindiCSS(),
     // https://github.com/antfu/unplugin-vue-components
     Components({
