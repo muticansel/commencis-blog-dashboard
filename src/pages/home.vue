@@ -4,7 +4,6 @@ const name = ref("");
 
 <template>
   <main>
-    <TheWelcome />
     <div
       class="container flex flex-col gap-7 text-black justify-between items-center bg-orange-500 p-6"
     >

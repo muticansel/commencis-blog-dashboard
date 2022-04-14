@@ -13,8 +13,11 @@ declare module 'vue' {
     EditIconThreeDots: typeof import('./components/icons/EditIconThreeDots.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     LoginForm: typeof import('./components/LoginForm.vue')['default']
+    Menu: typeof import('./components/Sidebar/Menu.vue')['default']
+    MenuItem: typeof import('./components/Sidebar/MenuItem.vue')['default']
     RouterLink: typeof import("vue-router")["RouterLink"];
     RouterView: typeof import("vue-router")["RouterView"];
+    UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']
   }
 }
 

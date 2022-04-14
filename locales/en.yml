@@ -2,3 +2,4 @@ greet: Welcome
 login:
   welcome: Welcome Back
   forgot: Forgot password?
+  password: Password
