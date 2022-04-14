@@ -6,7 +6,10 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 import Components from "unplugin-vue-components/vite";
 import AutoImport from "unplugin-auto-import/vite";
 import WindiCSS from "vite-plugin-windicss";
+import path from "path";
+import VueI18n from "@intlify/vite-plugin-vue-i18n";
 import Layouts from "vite-plugin-vue-layouts";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -34,7 +37,16 @@ export default defineConfig({
         globalsPropValue: true, // Default `true`, (true | false | 'readonly' | 'readable' | 'writable' | 'writeable')
       },
     }),
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      include: [path.resolve(__dirname, "locales/**")],
+    }),
   ],
+  optimizeDeps: {
+    include: ["vue", "vue-router", "@vueuse/core"],
+    exclude: ["vue-demi"],
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

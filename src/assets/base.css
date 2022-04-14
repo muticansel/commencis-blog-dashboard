@@ -1,8 +1,3 @@
-* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,8 +48,28 @@ table {
   font-weight: 700;
   font-size: 30px;
   line-height: 35px;
-  text-align: center;
   letter-spacing: -0.02em;
 
   color: #2A3342;
-  }
+}
+.pre-title{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 16px;
+}
+.base-small {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+.base-body-12{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+}

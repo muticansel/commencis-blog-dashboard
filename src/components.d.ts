@@ -2,16 +2,21 @@
 // We suggest you to commit this file into source control
 // Read more: https://github.com/vuejs/vue-next/pull/3399
 
-declare module 'vue' {
+declare module "vue" {
   export interface GlobalComponents {
-    BaseButton: typeof import('./components/BaseComponents/BaseButton.vue')['default']
-    BaseInput: typeof import('./components/BaseComponents/BaseInput.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    LoginForm: typeof import('./components/LoginForm.vue')['default']
-    Menu: typeof import('./components/Sidebar/Menu.vue')['default']
-    MenuItem: typeof import('./components/Sidebar/MenuItem.vue')['default']
-    UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']
+    BaseButton: typeof import("./components/BaseComponents/BaseButton.vue")["default"];
+    BaseDropdown: typeof import("./components/BaseComponents/BaseDropdown.vue")["default"];
+    BaseInput: typeof import("./components/BaseComponents/BaseInput.vue")["default"];
+    BlogList: typeof import("./components/BlogList/BlogList.vue")["default"];
+    BlogListHeader: typeof import("./components/BlogList/BlogListHeader.vue")["default"];
+    BlogTag: typeof import("./components/BlogList/BlogTag.vue")["default"];
+    EditIconThreeDots: typeof import("./components/icons/EditIconThreeDots.vue")["default"];
+    HelloWorld: typeof import("./components/HelloWorld.vue")["default"];
+    LoginForm: typeof import("./components/LoginForm.vue")["default"];
+    Menu: typeof import("./components/Sidebar/Menu.vue")["default"];
+    MenuItem: typeof import("./components/Sidebar/MenuItem.vue")["default"];
+    UserInfo: typeof import("./components/Sidebar/UserInfo.vue")["default"];
   }
 }
 
-export { }
+export {};
