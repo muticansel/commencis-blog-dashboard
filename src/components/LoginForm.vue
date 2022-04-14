@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ref, reactive, onMounted } from "vue";
 import _commencisLogo from "../assets/images/commencis-logo-purple.png";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 const loginForm = reactive({ name: "", password: "" });
-const emailinput = ref(null);
+const emailinput = ref<HTMLInputElement>();
 
 onMounted(() => {
-  emailinput.value.focus();
+  emailinput.value?.focus();
 });
 
 const submitForm = (event: Event) => {
@@ -33,7 +35,7 @@ const handleBaseClick = (a) => {
             v-model="loginForm.name"
             class="p-1 mt-2"
           />
-          <label class="block mt-5" for="">Password</label>
+          <label class="block mt-5" for="">{{ t("login.password") }}</label>
           <input
             type="password"
             v-model="loginForm.password"

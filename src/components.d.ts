@@ -16,6 +16,8 @@ declare module "vue" {
     Menu: typeof import("./components/Sidebar/Menu.vue")["default"];
     MenuItem: typeof import("./components/Sidebar/MenuItem.vue")["default"];
     UserInfo: typeof import("./components/Sidebar/UserInfo.vue")["default"];
+    RouterLink: typeof import("vue-router")["RouterLink"];
+    RouterView: typeof import("vue-router")["RouterView"];
   }
 }
 

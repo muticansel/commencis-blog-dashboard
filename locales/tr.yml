@@ -1,4 +1,5 @@
 greet: Hoşgeldiniz
 login:
-  welcome: Welcome Back
   forgot: Forgot password?
+  password: Parola
+  welcome: Welcome Back
