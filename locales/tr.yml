@@ -1,3 +1,10 @@
+blogdropdown:
+  copy: Bağlantıyı kopyala
+  delete: Silmek
+  edit: Düzenlemek
+  move: Taşınmak
+  share: Paylaşmak
+  star: Yıldız
 greet: Hoşgeldiniz
 login:
   forgot: Forgot password?

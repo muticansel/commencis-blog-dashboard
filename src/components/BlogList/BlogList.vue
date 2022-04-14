@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
 import BlogTag from "./BlogTag.vue";
 interface Props {
   title: string;
@@ -8,12 +7,22 @@ interface Props {
   tags: string[];
   category: string;
 }
+const [showDropdown, toggleDropdown] = useToggle(true);
+const dropdownRef = ref(null);
+
+onClickOutside(dropdownRef, () => {
+  showDropdown.value = false;
+});
+const contextClickHandler = (eventName: string) => {
+  console.log(eventName);
+};
+
 const props = defineProps<Props>();
 const emits = defineEmits(["emits"]);
 
-onMounted(() => {
-  console.log("mounted");
-});
+const hanldeDropdown = () => {
+  toggleDropdown();
+};
 </script>
 
 <template>
@@ -28,7 +37,19 @@ onMounted(() => {
         <BlogTag v-for="tag in tags" :key="tag" :text="tag" />
       </div>
       <BlogTag :text="category" />
-      <EditIconThreeDots></EditIconThreeDots>
+      <div
+        @click="hanldeDropdown"
+        class="w-[40px] hover:bg-light-400 rounded-md py-2 flex justify-center items-center relative cursor-pointer"
+      >
+        <EditIconThreeDots> </EditIconThreeDots>
+        <BlogListDropdown
+          ref="dropdownRef"
+          :items="contextItems"
+          :show-dropdown="showDropdown"
+          :title="title"
+          @context-click="contextClickHandler"
+        />
+      </div>
     </div>
   </div>
 </template>

@@ -3,3 +3,10 @@ login:
   welcome: Welcome Back
   forgot: Forgot password?
   password: Password
+blogdropdown:
+  share: Share
+  copy: Copy link
+  star: Star
+  delete: Delete
+  move: Move
+  edit: Edit

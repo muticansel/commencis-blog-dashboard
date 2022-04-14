@@ -1,2 +1,8 @@
+blogdropdown:
+  copy: Copier le lien
+  edit: Modifier
+  move: Déplacer
+  share: Partager
+greet: Bienvenue
 login:
   password: Mot de passe

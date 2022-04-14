@@ -10,7 +10,6 @@ const messages = Object.fromEntries(
     }
   )
 );
-console.log(import.meta.globEager("../locales/*.y(a)?ml"));
 
 const i18n = createI18n({
   legacy: false,
