@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import { isDark, toggleDark } from '@/composables/dark'
+import { useUserStore } from '@/stores/user'
+const user = useUserStore()
+const { username } = toRefs(user)
 const { t } = useI18n()
 
 </script>
@@ -12,7 +15,7 @@ const { t } = useI18n()
         <arrow-left class="arrow" />
       </BaseIconButton>
       <h4 class="title-35">
-        {{ t('greet') }}
+        {{ t('greet') }}   {{ username }}
       </h4>
     </div>
     <div class="flex items-center gap-[24px]">
