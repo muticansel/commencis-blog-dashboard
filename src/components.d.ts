@@ -22,6 +22,7 @@ declare module 'vue' {
     MoveIcon: typeof import('./components/icons/move-icon.vue')['default']
     SettingsIcon: typeof import('./components/icons/settings-icon.vue')['default']
     ShareIcon: typeof import('./components/icons/share-icon.vue')['default']
+    SideBar: typeof import('./components/Sidebar/SideBar.vue')['default']
     StarIcon: typeof import('./components/icons/star-icon.vue')['default']
     UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']
   }
