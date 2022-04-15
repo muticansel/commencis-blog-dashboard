@@ -16,7 +16,6 @@ declare module 'vue' {
     DeleteIcon: typeof import('./components/icons/delete-icon.vue')['default']
     EditIcon: typeof import('./components/icons/edit-icon.vue')['default']
     EditIconThreeDots: typeof import('./components/icons/EditIconThreeDots.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     LoginForm: typeof import('./components/LoginForm.vue')['default']
     Menu: typeof import('./components/Sidebar/Menu.vue')['default']
     MenuItem: typeof import('./components/Sidebar/MenuItem.vue')['default']
