@@ -1,18 +1,18 @@
 <script lang="ts" setup>
-import { useI18n } from "vue-i18n";
+import { useI18n } from 'vue-i18n'
 interface Props {
-  items: string[];
-  title: string;
-  showDropdown: boolean;
+  items: string[]
+  title: string
+  showDropdown: boolean
 }
 
-const props = defineProps<Props>();
-const emit = defineEmits(["contextClick"]);
-const { t } = useI18n();
+const props = defineProps<Props>()
+const emit = defineEmits(['contextClick'])
+const { t } = useI18n()
 
 const handleContextClick = (eventName: string) => {
-  emit("contextClick", eventName);
-};
+  emit('contextClick', eventName)
+}
 </script>
 
 <template>
@@ -29,48 +29,48 @@ const handleContextClick = (eventName: string) => {
         >
           <span class="h-[24px] title-short">{{ title }}</span>
         </button>
-        <BaseDivider class="py-1"></BaseDivider>
+        <BaseDivider class="py-1" />
         <button
           class="dropdown-common-item"
           @click.prevent="handleContextClick('share')"
         >
-          <share-icon></share-icon>
+          <share-icon class="fillClass path fill-purple-800 " />
           <span>{{ t("blogdropdown.share") }}</span>
         </button>
         <button
           class="dropdown-common-item"
           @click.prevent="handleContextClick('copy')"
         >
-          <copy-icon></copy-icon>
+          <copy-icon />
           <span>{{ t("blogdropdown.copy") }}</span>
         </button>
         <button
           class="dropdown-common-item"
           @click.prevent="handleContextClick('star')"
         >
-          <star-icon></star-icon>
+          <star-icon />
           <span>{{ t("blogdropdown.share") }}</span>
         </button>
-        <BaseDivider class="py-1"></BaseDivider>
+        <BaseDivider class="py-1" />
         <button
           class="dropdown-common-item"
           @click.prevent="handleContextClick('delete')"
         >
-          <delete-icon></delete-icon>
+          <delete-icon />
           <span>{{ t("blogdropdown.share") }}</span>
         </button>
         <button
           class="dropdown-common-item"
           @click.prevent="handleContextClick('move')"
         >
-          <move-icon></move-icon>
+          <move-icon />
           <span>{{ t("blogdropdown.move") }}</span>
         </button>
         <button
           class="dropdown-common-item"
           @click.prevent="handleContextClick('edit')"
         >
-          <edit-icon></edit-icon>
+          <edit-icon />
           <span>{{ t("blogdropdown.edit") }}</span>
         </button>
       </div>
@@ -98,6 +98,9 @@ const handleContextClick = (eventName: string) => {
 .dropdown-content-enter-active,
 .dropdown-content-leave-active {
   transition: all ease 0.3s;
+}
+.fillClass path{
+  fill: aqua;
 }
 
 .dropdown-content-enter,

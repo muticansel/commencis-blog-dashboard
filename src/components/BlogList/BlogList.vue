@@ -1,35 +1,39 @@
 <script setup lang="ts">
-import BlogTag from "./BlogTag.vue";
+import BlogTag from './BlogTag.vue'
 interface Props {
-  title: string;
-  date: string;
-  status: string /* "draft" | "published" | "freestyle" */;
-  tags: string[];
-  category: string;
+  title: string
+  date: string
+  status: string /* "draft" | "published" | "freestyle" */
+  tags: string[]
+  category: string
 }
-const [showDropdown, toggleDropdown] = useToggle(true);
-const dropdownRef = ref(null);
+const [showDropdown, toggleDropdown] = useToggle(true)
+const dropdownRef = ref(null)
 
 onClickOutside(dropdownRef, () => {
-  showDropdown.value = false;
-});
+  showDropdown.value = false
+})
 const contextClickHandler = (eventName: string) => {
-  console.log(eventName);
-};
+  console.log(eventName)
+}
 
-const props = defineProps<Props>();
-const emits = defineEmits(["emits"]);
+const props = defineProps<Props>()
+const emits = defineEmits(['emits'])
 
 const hanldeDropdown = () => {
-  toggleDropdown();
-};
+  toggleDropdown()
+}
 </script>
 
 <template>
   <div class="bloglist-wrapper">
     <div class="flex justify-between items-center min-w-[271px]">
-      <h4 class="base-small">{{ title }}</h4>
-      <h4 class="base-small">{{ date }}</h4>
+      <h4 class="base-small">
+        {{ title }}
+      </h4>
+      <h4 class="base-small">
+        {{ date }}
+      </h4>
     </div>
     <div class="flex justify-between items-center min-w-[556px]">
       <BlogTag :text="status" />
@@ -38,10 +42,10 @@ const hanldeDropdown = () => {
       </div>
       <BlogTag :text="category" />
       <div
-        @click="hanldeDropdown"
         class="w-[40px] hover:bg-light-400 rounded-md py-2 flex justify-center items-center relative cursor-pointer"
+        @click="hanldeDropdown"
       >
-        <EditIconThreeDots> </EditIconThreeDots>
+        <EditIconThreeDots />
         <BlogListDropdown
           ref="dropdownRef"
           :items="contextItems"

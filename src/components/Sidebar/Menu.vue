@@ -8,7 +8,12 @@ const props = defineProps<Props>()
 
 <template>
   <div class="flex-col justify-center align-middle">
-    <MenuItem v-for="item in items" :key="item.id" :item="item" :is-sidebar-open="isSidebarOpen" />
+    <MenuItem
+      v-for="item in items"
+      :key="item.id"
+      :item="item"
+      :is-sidebar-open="isSidebarOpen"
+    />
   </div>
 </template>
 

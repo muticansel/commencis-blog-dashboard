@@ -1,16 +1,16 @@
 <script lang="ts" setup>
 interface Props {
-  items: string[];
-  showDropdown: boolean;
+  items: string[]
+  showDropdown: boolean
 }
-const props = defineProps<Props>();
-const emit = defineEmits(["contextClick"]);
+const props = defineProps<Props>()
+const emit = defineEmits(['contextClick'])
 
 const handleContextClick = (eventName: string) => {
-  emit("contextClick", eventName);
-};
-const firstGroupOfItems = props.items.slice(0, 4);
-const restItems = props.items.slice(4);
+  emit('contextClick', eventName)
+}
+const firstGroupOfItems = props.items.slice(0, 4)
+const restItems = props.items.slice(4)
 </script>
 
 <template>
@@ -29,14 +29,14 @@ const restItems = props.items.slice(4);
         >
           <span>{{ item }}</span>
         </button>
-        <BaseDivider></BaseDivider>
+        <BaseDivider />
         <button
           v-for="item in restItems"
           :key="item"
           class="dropdown-common-item"
           @click.prevent="handleContextClick(item)"
         >
-          <move-icon></move-icon>
+          <move-icon />
           <span>{{ item }}</span>
         </button>
       </div>

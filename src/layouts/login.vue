@@ -5,7 +5,7 @@
         <RouterView />
       </div>
     </div>
-    <div class="w-3/6 bg-right"></div>
+    <div class="w-3/6 bg-right" />
   </div>
 </template>
 <style lang="scss" scoped>

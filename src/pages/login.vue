@@ -2,7 +2,6 @@
 
 <template>
   <LoginForm />
-  <h1>ASDASDQWERT</h1>
 </template>
 
 <route lang="yaml">

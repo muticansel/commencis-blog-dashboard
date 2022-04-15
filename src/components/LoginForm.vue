@@ -21,18 +21,27 @@ const handleBaseClick = () => {
 </script>
 
 <template>
-  <img :src="_commencisLogo" class="w-[180px]" alt="">
+  <img :src="_commencisLogo" class="w-[180px] px-3 py-5" alt="">
   <h1 class="title-30">
-    {{ t("login.joinOurCommunity") }}
+    Join Our Community
   </h1>
-  <h2>{{ t("login.startJourneyWithUs") }}</h2>
+  <h2>Start Journey With us</h2>
   <div class="text-left">
-    <label class="block" for="">{{ t("login.email") }}</label>
-    <input ref="emailinput" v-model="loginForm.name" type="text" class="p-1 mt-2">
-    <label class="block mt-5" for="">{{ t("login.password") }}</label>
+    <label class="block" for="">Email</label>
+    <input
+      ref="emailinput"
+      v-model="loginForm.name"
+      type="text"
+      class="p-1 mt-2"
+    >
+    <label class="block mt-5" for="">Password</label>
     <input v-model="loginForm.password" type="password" class="p-1 mt-2">
   </div>
-  <BaseButton text="Sign In" button-class="mt-4" @click="handleBaseClick" />
+  <BaseButton
+    text="Sign In"
+    button-class="mt-4 my-3"
+    @click="handleBaseClick"
+  />
 </template>
 
 <style lang="scss" scoped>
