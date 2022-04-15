@@ -4,9 +4,11 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ArrowLeft: typeof import('./components/icons/arrow-left.vue')['default']
     BaseButton: typeof import('./components/BaseComponents/BaseButton.vue')['default']
     BaseDivider: typeof import('./components/BaseComponents/BaseDivider.vue')['default']
     BaseDropdown: typeof import('./components/BaseComponents/BaseDropdown.vue')['default']
+    BaseIconButton: typeof import('./components/BaseComponents/BaseIconButton.vue')['default']
     BaseInput: typeof import('./components/BaseComponents/BaseInput.vue')['default']
     BlogList: typeof import('./components/BlogList/BlogList.vue')['default']
     BlogListDropdown: typeof import('./components/BlogList/BlogListDropdown.vue')['default']
@@ -16,14 +18,18 @@ declare module 'vue' {
     DeleteIcon: typeof import('./components/icons/delete-icon.vue')['default']
     EditIcon: typeof import('./components/icons/edit-icon.vue')['default']
     EditIconThreeDots: typeof import('./components/icons/EditIconThreeDots.vue')['default']
+    Header: typeof import('./components/Sidebar/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     LoginForm: typeof import('./components/LoginForm.vue')['default']
     Menu: typeof import('./components/Sidebar/Menu.vue')['default']
     MenuItem: typeof import('./components/Sidebar/MenuItem.vue')['default']
+    Moon: typeof import('./components/icons/moon.vue')['default']
     MoveIcon: typeof import('./components/icons/move-icon.vue')['default']
+    Notification: typeof import('./components/icons/notification.vue')['default']
     SettingsIcon: typeof import('./components/icons/settings-icon.vue')['default']
     ShareIcon: typeof import('./components/icons/share-icon.vue')['default']
     StarIcon: typeof import('./components/icons/star-icon.vue')['default']
+    Sun: typeof import('./components/icons/sun.vue')['default']
     UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']
   }
 }

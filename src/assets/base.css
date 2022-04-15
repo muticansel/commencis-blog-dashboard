@@ -52,6 +52,14 @@ table {
 
   color: #2A3342;
 }
+.title-35 {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 35px;
+	display: flex;
+}
 .pre-title{
 	font-family: 'Inter';
 	font-style: normal;
