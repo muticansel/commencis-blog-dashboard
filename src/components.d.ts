@@ -28,6 +28,7 @@ declare module 'vue' {
     Notification: typeof import('./components/icons/notification.vue')['default']
     SettingsIcon: typeof import('./components/icons/settings-icon.vue')['default']
     ShareIcon: typeof import('./components/icons/share-icon.vue')['default']
+    SideBar: typeof import('./components/Sidebar/SideBar.vue')['default']
     StarIcon: typeof import('./components/icons/star-icon.vue')['default']
     Sun: typeof import('./components/icons/sun.vue')['default']
     UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']

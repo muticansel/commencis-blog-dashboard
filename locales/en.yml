@@ -3,6 +3,10 @@ login:
   welcome: Welcome Back
   forgot: Forgot password?
   password: Password
+  logout: Logout
+  email: E-mail
+  joinOurCommunity: Join Our Community
+  startJourneyWithUs: Start Journey With us
 blogdropdown:
   share: Share
   copy: Copy link

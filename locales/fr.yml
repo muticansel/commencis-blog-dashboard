@@ -5,4 +5,8 @@ blogdropdown:
   share: Partager
 greet: Bienvenue
 login:
+  email: E-mail
+  joinOurCommunity: Rejoignez notre communauté
+  logout: Se déconnecter
   password: Mot de passe
+  startJourneyWithUs: Commencez votre voyage avec nous

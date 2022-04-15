@@ -7,6 +7,10 @@ blogdropdown:
   star: Yıldız
 greet: Hoşgeldiniz
 login:
+  email: E-posta
   forgot: Forgot password?
+  joinOurCommunity: Topluluğumuza Katılın
+  logout: Çıkış Yap
   password: Parola
+  startJourneyWithUs: Yolculuğa Bizimle Başlayın
   welcome: Welcome Back
