@@ -1,20 +1,16 @@
 <script setup lang="ts">
 interface Props {
-  isSidebarOpen: boolean;
-  items: any;
+  isSidebarOpen: boolean
+  items: any
 }
-const props = defineProps<Props>();
+const props = defineProps<Props>()
 </script>
 
 <template>
   <div class="flex-col justify-center align-middle">
-    <MenuItem
-      v-for="item in items"
-      :item="item"
-      :key="item.id"
-      :isSidebarOpen="isSidebarOpen"
-    />
+    <MenuItem v-for="item in items" :key="item.id" :item="item" :is-sidebar-open="isSidebarOpen" />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
