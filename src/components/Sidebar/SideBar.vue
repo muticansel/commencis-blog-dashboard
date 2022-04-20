@@ -7,12 +7,13 @@ const [sidebarVisible, sidebarToggle] = useToggle(false)
 const menuItems = [
   {
     id: 'dashboard',
-    iconName: 'D',
+    iconName: 'dashboard',
     menuItem: 'Dashboard',
+    menuPath: '/login',
   },
   {
     id: 'myArticles',
-    iconName: 'A',
+    iconName: 'articles',
     menuItem: 'My Articles',
   },
 ]
