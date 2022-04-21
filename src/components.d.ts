@@ -33,6 +33,8 @@ declare module 'vue' {
     StarIcon: typeof import('./components/icons/star-icon.vue')['default']
     Sun: typeof import('./components/icons/sun.vue')['default']
     UserInfo: typeof import('./components/Sidebar/UserInfo.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
 
