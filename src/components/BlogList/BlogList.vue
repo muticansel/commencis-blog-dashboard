@@ -7,7 +7,7 @@ interface Props {
   tags: string[]
   category: string
 }
-const [showDropdown, toggleDropdown] = useToggle(true)
+const [showDropdown, toggleDropdown] = useToggle(false)
 const dropdownRef = ref(null)
 
 onClickOutside(dropdownRef, () => {
@@ -48,7 +48,6 @@ const hanldeDropdown = () => {
         <EditIconThreeDots />
         <BlogListDropdown
           ref="dropdownRef"
-          :items="contextItems"
           :show-dropdown="showDropdown"
           :title="title"
           @context-click="contextClickHandler"

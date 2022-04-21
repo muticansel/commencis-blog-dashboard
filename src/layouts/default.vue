@@ -7,7 +7,7 @@ const { t } = useI18n()
     <SideBar />
     <div class="bg-white w-full">
       <Header />
-      <div class="h-full w-full">
+      <div class="h-full w-full px-[24px] dark:bg-gray-800 dark:text-white">
         <RouterView />
       </div>
     </div>

@@ -6,7 +6,7 @@ const props = defineProps<Props>()
 </script>
 
 <template>
-  <button class="button" :class="{'rounded-[99px]': rounded === 'full'}" v-bind="$attrs">
+  <button class="button" :class="{'full-rounded': rounded === 'full'}" v-bind="$attrs">
     <slot />
   </button>
 </template>
@@ -15,8 +15,12 @@ const props = defineProps<Props>()
 
 .button {
     @apply border-[1px] border-solid border-gray-200
-     rounded-[8px] hover:bg-light-100;
+     hover:bg-light-100;
     padding: 12px 20px;
+    border-radius: 8px;
+    &.full-rounded {
+      border-radius: 99px;
+    }
 }
 
 </style>

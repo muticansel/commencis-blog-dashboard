@@ -3,14 +3,26 @@
 <template>
   <div class="header-wrapper">
     <div class="flex justify-between items-center min-w-[271px]">
-      <h4 class="pre-title">TITLE</h4>
-      <h4 class="pre-title">DATE</h4>
+      <h4 class="pre-title">
+        TITLE
+      </h4>
+      <h4 class="pre-title">
+        DATE
+      </h4>
     </div>
     <div class="flex justify-between items-center min-w-[556px]">
-      <h4 class="pre-title">STATUS</h4>
-      <h4 class="pre-title">TAGS</h4>
-      <h4 class="pre-title">CATEGORY</h4>
-      <h4 class="pre-title">EDIT</h4>
+      <h4 class="pre-title">
+        STATUS
+      </h4>
+      <h4 class="pre-title">
+        TAGS
+      </h4>
+      <h4 class="pre-title">
+        CATEGORY
+      </h4>
+      <h4 class="pre-title">
+        EDIT
+      </h4>
     </div>
   </div>
 </template>
