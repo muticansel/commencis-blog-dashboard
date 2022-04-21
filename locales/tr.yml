@@ -14,3 +14,10 @@ login:
   password: Parola
   startJourneyWithUs: Yolculuğa Bizimle Başlayın
   welcome: Welcome Back
+sidebar:
+  menuDashboard: Panel
+  menuITSupport: IT Destek
+  menuInternal: Commencis Dahili
+  menuMakeAPodcast: Podcast Yap
+  menuMyArticles: Makalelerim
+  menuPomodore: Pomodore
