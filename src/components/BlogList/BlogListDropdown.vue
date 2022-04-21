@@ -1,7 +1,6 @@
 <script lang="ts" setup>
 import { useI18n } from 'vue-i18n'
 interface Props {
-  items: string[]
   title: string
   showDropdown: boolean
 }
