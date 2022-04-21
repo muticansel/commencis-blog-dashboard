@@ -14,5 +14,12 @@ blogdropdown:
   delete: Delete
   move: Move
   edit: Edit
+sidebar:
+  menuDashboard: Dashboard
+  menuMyArticles: My Articles
+  menuInternal: Commencis Internal
+  menuMakeAPodcast: Make A Podcast
+  menuITSupport: IT Support
+  menuPomodore: Pomodore
 blog:
   myArticles: My Articles

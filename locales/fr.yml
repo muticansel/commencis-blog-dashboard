@@ -10,3 +10,10 @@ login:
   logout: Se déconnecter
   password: Mot de passe
   startJourneyWithUs: Commencez votre voyage avec nous
+sidebar:
+  menuDashboard: Tableau de bord
+  menuITSupport: Support Informatique
+  menuInternal: Commencer Interne
+  menuMakeAPodcast: Faire un podcast
+  menuMyArticles: Mes articles
+  menuPomodore: Pomodore
