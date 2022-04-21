@@ -6,15 +6,34 @@ const [sidebarVisible, sidebarToggle] = useToggle(false)
 
 const menuItems = [
   {
-    id: 'dashboard',
+    id: 'home',
     iconName: 'dashboard',
-    menuItem: 'Dashboard',
-    menuPath: '/login',
+    menuItem: 'sidebar.menuDashboard',
+    menuPath: '/dashboard/home',
   },
   {
-    id: 'myArticles',
+    id: 'my-articles',
     iconName: 'articles',
-    menuItem: 'My Articles',
+    menuItem: 'sidebar.menuMyArticles',
+    menuPath: '/dashboard/my-articles',
+  },
+  {
+    id: 'pomodore',
+    iconName: 'pomodore',
+    menuItem: 'sidebar.menuPomodore',
+    menuPath: '/dashboard/pomodore',
+  },
+  {
+    id: 'internal',
+    iconName: 'internal',
+    menuItem: 'sidebar.menuInternal',
+    menuPath: '/dashboard/internal',
+  },
+  {
+    id: 'support',
+    iconName: 'IT support',
+    menuItem: 'sidebar.menuITSupport',
+    menuPath: '/dashboard/support',
   },
 ]
 
