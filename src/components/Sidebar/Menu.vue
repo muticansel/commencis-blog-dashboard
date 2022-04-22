@@ -1,13 +1,15 @@
 <script setup lang="ts">
 const route = useRoute()
+
+interface MenuItemProps {
+  id: string
+  iconName: string
+  menuItem: string
+  menuPath: string
+}
 interface Props {
   isSidebarOpen: boolean
-  items: [{
-    id: string
-    iconName: string
-    menuItem: string
-    menuPath: string
-  }]
+  items: MenuItemProps[]
 }
 const props = defineProps<Props>()
 

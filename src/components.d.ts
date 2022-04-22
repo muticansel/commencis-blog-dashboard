@@ -19,6 +19,8 @@ declare module 'vue' {
     EditIcon: typeof import('./components/icons/edit-icon.vue')['default']
     EditIconThreeDots: typeof import('./components/icons/EditIconThreeDots.vue')['default']
     Header: typeof import('./components/Sidebar/Header.vue')['default']
+    IconArrowLeftCircle: typeof import('./components/icons/iconArrowLeftCircle.vue')['default']
+    IconArrowRightCircle: typeof import('./components/icons/iconArrowRightCircle.vue')['default']
     IconArticles: typeof import('./components/icons/iconArticles.vue')['default']
     IconDashboard: typeof import('./components/icons/iconDashboard.vue')['default']
     IconLineChart: typeof import('./components/icons/iconLineChart.vue')['default']

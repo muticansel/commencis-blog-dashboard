@@ -47,11 +47,10 @@ const classObject = computed(() => ({
 <template>
   <div id="sidebar" :class="classObject" class="sidebar">
     <div id="user-info" class="w-full pl-[24px] pr-[24px] pt-[40px] pb-[50px]">
-      <UserInfo :is-sidebar-open="sidebarVisible" />
+      <UserInfo :is-sidebar-open="sidebarVisible" @toggle-sidebar="sidebarToggle" />
     </div>
     <div class="flex flex-col h-lg justify-between">
       <Menu :items="menuItems" :is-sidebar-open="sidebarVisible" />
-      <BaseButton text="Toggle" @click="sidebarToggle" />
       <div id="sidebar-logout">
         {{ t("login.logout") }}
       </div>
