@@ -51,7 +51,7 @@ const iconComponent = computed(() => {
 </script>
 
 <template>
-  <div class="flex items-center pl-[30px] mb-[16px] ml-[24px] mr-[24px] h-[48px] rounded-t-lg rounded-b-lg" :class="{'activeMenu': isActive}" @click="goToMenu">
+  <div class="flex items-center pl-[16px] mb-[16px] ml-[24px] mr-[24px] h-[48px] rounded-t-lg rounded-b-lg" :class="{'activeMenu': isActive}" @click="goToMenu">
     <component :is="iconComponent" />
     <b v-if="isSidebarOpen" class="pl-[15px] base-body-18">{{ t(item.menuItem) }}</b>
   </div>
