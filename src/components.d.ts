@@ -30,8 +30,6 @@ declare module 'vue' {
     Moon: typeof import('./components/icons/moon.vue')['default']
     MoveIcon: typeof import('./components/icons/move-icon.vue')['default']
     Notification: typeof import('./components/icons/notification.vue')['default']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
     SettingsIcon: typeof import('./components/icons/settings-icon.vue')['default']
     ShareIcon: typeof import('./components/icons/share-icon.vue')['default']
     SideBar: typeof import('./components/Sidebar/SideBar.vue')['default']
