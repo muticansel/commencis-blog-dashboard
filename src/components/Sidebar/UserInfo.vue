@@ -3,6 +3,11 @@ interface Props {
   isSidebarOpen: boolean
 }
 const props = defineProps<Props>()
+const emit = defineEmits(['toggle-sidebar'])
+
+const toggleSidebar = () => {
+  emit('toggle-sidebar')
+}
 </script>
 
 <template>
@@ -16,6 +21,10 @@ const props = defineProps<Props>()
       class="flex flex-col h-full align-middle justify-center"
     >
       WELCOME
+    </div>
+    <div class="flex h-full w-max items-center justify-end w-[calc(40%)]" @click="toggleSidebar">
+      <IconArrowLeftCircle v-if="isSidebarOpen" />
+      <IconArrowRightCircle v-else />
     </div>
     <!-- <div id="settings">SETTINGS</div> -->
   </div>
