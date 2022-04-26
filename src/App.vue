@@ -5,7 +5,7 @@
   <RouterView />
 </template>
 
-<style>
+<style lang="scss">
 @import "@/assets/base.css";
 body,
 html,
@@ -13,5 +13,12 @@ html,
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+html.dark{
+  background-color: black;
+  color: white;
+}
+html.dark  h1 {
+  color: white;
 }
 </style>

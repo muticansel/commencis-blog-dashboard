@@ -45,7 +45,7 @@ const classObject = computed(() => ({
 </script>
 
 <template>
-  <div id="sidebar" :class="classObject" class="sidebar">
+  <div id="sidebar" :class="classObject" class="sidebar ">
     <div id="user-info" class="w-full pl-[24px] pr-[24px] pt-[40px] pb-[50px]">
       <UserInfo :is-sidebar-open="sidebarVisible" />
     </div>
@@ -64,7 +64,8 @@ const classObject = computed(() => ({
     display: flex;
 }
 .sidebar {
-    background-color: white;
+  @apply dark:bg-gray-900 bg-light-100;
   transition: 0.4s ease-in-out all;
 }
+
 </style>
