@@ -7,6 +7,7 @@ describe('BlogListDropdown', () => {
   beforeAll(() => {
     config.global.plugins = [i18nTest]
   })
+
   it('renders properly when showDropdown is true', () => {
     const wrapper = mount(BlogListDropdown, {
       props: { title: 'Javascript is great', showDropdown: true },
@@ -17,6 +18,7 @@ describe('BlogListDropdown', () => {
     expect(wrapper.findAll('button .title-short')).toHaveLength(1)
     expect(titleElement.text()).toContain('Javascript is great')
   })
+
   it('doesnt render title properly when showDropdown is false', () => {
     const wrapper = mount(BlogListDropdown, {
       props: { title: 'Javascript is great', showDropdown: false },
@@ -25,6 +27,7 @@ describe('BlogListDropdown', () => {
 
     expect(wrapper.findAll('button .title-short')).toHaveLength(0)
   })
+
   it('triggers contextClick event', () => {
     const wrapper = mount(BlogListDropdown, {
       props: { title: 'Javascript is great', showDropdown: true },
