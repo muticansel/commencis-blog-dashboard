@@ -29,7 +29,8 @@
 
 <style lang="scss" scoped>
 .header-wrapper {
-  @apply w-full flex justify-between items-center px-[30px] py-[19px] gap-[127px];
+  @apply w-full flex justify-between items-center px-[30px] py-[19px] gap-[127px]
+  dark:bg-dark-300;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 }

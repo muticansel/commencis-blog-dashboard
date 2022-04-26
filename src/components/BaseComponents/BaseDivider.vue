@@ -1,8 +1,13 @@
 <template>
-  <hr class="solid-divider" />
+  <hr class="solid-divider">
 </template>
 <style lang="scss" scoped>
 hr.solid-divider {
-  border-top: 1px solid #eae5de;
+  @apply border-[#eae5de] dark:border-dark-50 my-[4.5px];
+  border-top-width: 1px;
+  border-style: solid;
+  padding: 0;
+
 }
+
 </style>

@@ -13,6 +13,7 @@ const props = defineProps<Props>()
 
 <style lang="scss" scoped>
 .blog-tag {
-  @apply px-[12px] py-[2px] inline-block  rounded-[12px] bg-yellow-400 ml-[2px];
+  @apply px-[12px] py-[2px] inline-block  rounded-[12px] bg-yellow-400 ml-[2px]
+  dark:text-black;
 }
 </style>

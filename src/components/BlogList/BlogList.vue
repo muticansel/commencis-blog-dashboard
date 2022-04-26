@@ -42,14 +42,12 @@ const hanldeDropdown = () => {
       </div>
       <BlogTag :text="category" />
       <div
-        class="w-[40px] hover:bg-light-400 rounded-md py-2 flex justify-center items-center relative cursor-pointer"
+        class="edit-icon"
         @click="hanldeDropdown"
       >
         <EditIconThreeDots />
         <BlogListDropdown
-          ref="dropdownRef"
-          :show-dropdown="showDropdown"
-          :title="title"
+          ref="dropdownRef" :show-dropdown="showDropdown" :title="title"
           @context-click="contextClickHandler"
         />
       </div>
@@ -59,12 +57,22 @@ const hanldeDropdown = () => {
 
 <style lang="scss" scoped>
 .bloglist-wrapper {
-  @apply w-full flex justify-between items-center px-[30px] py-[19px] gap-[127px];
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+  @apply w-full flex justify-between items-center px-[30px] py-[19px] gap-[127px] dark: bg-dark-200;
+  box-shadow: 0px 2px 8px rgba(224, 236, 255, 0.15);
   border-radius: 8px;
   border: 1px solid #e2e4ffaf;
-  box-shadow: 0px 2px 8px rgba(224, 236, 255, 0.15);
   border-radius: 12px;
   border-left: solid 15px #2f83e4;
+}
+
+.dark .bloglist-wrapper {
+  box-shadow: 0px 2px 8px rgba(60, 60, 60, 0.15);
+  border: none;
+  border-left: solid 15px #2f83e4;
+}
+.edit-icon{
+  @apply w-[40px] hover:bg-light-400 rounded-md py-2
+  flex justify-center items-center relative cursor-pointer
+  dark:hover:bg-dark-800;
 }
 </style>
