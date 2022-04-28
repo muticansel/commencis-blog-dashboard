@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="w-3/6 bg-blue-100 flex justify-center items-center">
-      <div class="w-[358px] flex justify-center items-center flex-col bg-white">
+      <div class="w-[80%] h-[60%] flex justify-center items-center flex-col bg-white">
         <RouterView />
       </div>
     </div>
