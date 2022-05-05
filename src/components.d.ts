@@ -14,6 +14,7 @@ declare module 'vue' {
     BlogListDropdown: typeof import('./components/BlogList/BlogListDropdown.vue')['default']
     BlogListHeader: typeof import('./components/BlogList/BlogListHeader.vue')['default']
     BlogTag: typeof import('./components/BlogList/BlogTag.vue')['default']
+    CardArticle: typeof import('./components/CardArticle.vue')['default']
     CopyIcon: typeof import('./components/icons/copy-icon.vue')['default']
     DeleteIcon: typeof import('./components/icons/delete-icon.vue')['default']
     EditIcon: typeof import('./components/icons/edit-icon.vue')['default']
